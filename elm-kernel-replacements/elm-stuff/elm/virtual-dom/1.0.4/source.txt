@@ -1,1 +1,1 @@
-https://github.com/lydell/virtual-dom/commit/8c20e5b9f309e82e67284669f3740132a2a4d9d6
+https://github.com/lydell/virtual-dom/commit/4163ad89613a6da9f29d7a9240f08fcc471d6cf5
