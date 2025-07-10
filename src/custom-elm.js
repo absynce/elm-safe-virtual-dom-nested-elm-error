@@ -24,7 +24,7 @@
     }
 
     connectedCallback() {
-      this.innerHTML = `<div id="${id}" test="123" data-elm></div>`;
+      this.innerHTML = `<div id="${id}" data-elm></div>`;
 
       var flags = { say : this.say
       };

@@ -4,5 +4,6 @@
       "inputs": ["src/Custom.elm", "src/Main.elm"],
       "output": "build/main.js"
     }
-  }
+  },
+  "serve": "./"
 }
