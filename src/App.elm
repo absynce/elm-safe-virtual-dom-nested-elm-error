@@ -50,7 +50,7 @@ view model =
     { title = "Example elm-safe-virtual-dom error with Elm custom element"
     , body =
         [ Html.p []
-            [ Html.text "Below is an Elm custom element that breaks when nested in Browser.document...depending on spacing in HTML body."
+            [ Html.text "Below is an Elm custom element that breaks when nested in Browser.application...depending on spacing in HTML body or if Elm debugger is opened."
             ]
         , Html.node "custom-elm"
             [ Html.Attributes.attribute "data-elm" ""

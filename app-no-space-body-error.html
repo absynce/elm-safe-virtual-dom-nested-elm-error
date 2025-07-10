@@ -4,10 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Error example safe virtual DOM</title>
-        <script defer src="./build/main.js"></script>
-        <script defer src="./src/custom-elm.js"></script>
-        <script defer src="./src/start.js"></script>
     </head>
-    <body><div id="root" data-elm></div>
-    </body>
+<body><div id="root" data-elm></div><script src="./build/main.js"></script><script src="./src/custom-elm.js"></script><script>Elm.App.init({ node: document.getElementById("root") });</script></body>
 </html>
