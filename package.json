@@ -1,0 +1,17 @@
+{
+  "name": "elm-safe-virtual-dom-nested-elm-error",
+  "version": "1.0.0",
+  "description": "Example of elm-safe-virtual-dom error with nested Elm custom element.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "node safe-virtual-dom.mjs && elm-watch hot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jared M. Smith",
+  "license": "ISC",
+  "devDependencies": {
+    "elm-format": "^0.8.8",
+    "elm-watch": "^2.0.0-beta.6"
+  }
+}
