@@ -36,35 +36,7 @@
       this.app = app;
 
       var element = this;
-
-      // app.ports.uxSelectSearchElementElmToJs.subscribe(
-      //   function uxSelectSearchElementElmToJs(data) {
-      //     if (data.tag === "selectedChanged") {
-      //       handleSelectChange(data.data);
-      //     }
-      //   },
-      // );
-
-      // function handleSelectChange(data) {
-      //   let selectedChangedEvent = new CustomEvent("selected-changed", {
-      //     detail: {
-      //       selected: data,
-      //     },
-      //   });
-
-      //   element.dispatchEvent(selectedChangedEvent);
-      // }
     }
-
-    // attributeChangedCallback(attrName, oldVal, newVal) {
-    //   if (this.app && attrName === sayAttribute) {
-    //     this.updateSay(this.say);
-    //   }
-    // }
-
-    // updateSay(say) {
-    //   this.app.ports.updateSay.send(selected);
-    // }
   }
   window.customElements.define(id, CustomElm);
 })();
