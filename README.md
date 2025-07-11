@@ -1,13 +1,13 @@
 # SSCCE of Elm custom element error in elm-safe-virtual-dom
 
-There's an error when there's an Elm custom element inside of a `Browser.{document|application}`...depending on spacing in HTML body. Does not happen with `Browser.element` or if the Elm custom element is not rendered.
+There's an error when there's multiple (2+) Elm custom elements inside of a `Browser.{document|application}`. Does not happen with `Browser.element`, if the Elm custom element is not rendered, or if there is only one (1) Elm custom element.
 
 ```bash
 npm i
 npm start
 ```
 
-Go to any of the following. Some require the debugger to be opened for an error to show up.
+Current behavior after updated to [8fb2f7](https://github.com/lydell/virtual-dom/commit/8fb2f741ed87310240be0dc1f782944d85ca8c47):
 
 - ✅ `doc.html` - works with only one (1) Elm custom element
 - ❌ `doc-two-elements.html` - error on load, stops execution when 2+ Elm custom elements
