@@ -1,4 +1,4 @@
-module Main exposing (main)
+module DocTwoElements exposing (main)
 
 import Browser
 import Html exposing (Html)
@@ -41,14 +41,20 @@ init flags =
 
 view : Model -> Browser.Document Msg
 view model =
-    { title = "Example elm-safe-virtual-dom error with Elm custom element"
+    { title = "❌ Error 2+ Elm custom element"
     , body =
         [ Html.p []
-            [ Html.text "Below is an Elm custom element that (EDIT: no longer breaks thanks to Simon in 8fb2f7) when nested in Browser.document...depending on spacing in HTML body."
+            [ Html.text "Below is an Elm custom element that only breaks when nested 2+ times in Browser.document...depending on spacing in HTML body."
             ]
         , Html.node "custom-elm"
             [ Html.Attributes.attribute "data-elm" ""
             , Html.Attributes.attribute "say" "hola"
+            ]
+            [ Html.text "Hello, World!"
+            ]
+        , Html.node "custom-elm"
+            [ Html.Attributes.attribute "data-elm" ""
+            , Html.Attributes.attribute "say" "hej"
             ]
             [ Html.text "Hello, World!"
             ]

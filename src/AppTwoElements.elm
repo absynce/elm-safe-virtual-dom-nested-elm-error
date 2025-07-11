@@ -1,4 +1,4 @@
-module App exposing (main)
+module AppTwoElements exposing (main)
 
 import Browser
 import Browser.Navigation as Nav
@@ -47,14 +47,20 @@ init flags url key =
 
 view : Model -> Browser.Document Msg
 view model =
-    { title = "Example elm-safe-virtual-dom error with Elm custom element"
+    { title = "❌ Error 2+ Elm custom element"
     , body =
         [ Html.p []
-            [ Html.text "Below is an Elm custom element that (EDIT: no longer breaks thanks to Simon in 8fb2f7) when nested in Browser.application...depending on spacing in HTML body or if Elm debugger is opened."
+            [ Html.text "Below is an Elm custom element that breaks when nested 2+ times in Browser.application...depending on spacing in HTML body or if Elm debugger is opened."
             ]
         , Html.node "custom-elm"
             [ Html.Attributes.attribute "data-elm" ""
             , Html.Attributes.attribute "say" "hola"
+            ]
+            [ Html.text "Hello, World!"
+            ]
+        , Html.node "custom-elm"
+            [ Html.Attributes.attribute "data-elm" ""
+            , Html.Attributes.attribute "say" "hej"
             ]
             [ Html.text "Hello, World!"
             ]

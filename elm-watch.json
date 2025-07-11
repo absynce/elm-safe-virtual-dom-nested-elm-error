@@ -1,7 +1,13 @@
 {
   "targets": {
     "Main": {
-      "inputs": ["src/App.elm", "src/Custom.elm", "src/Main.elm"],
+      "inputs": [
+        "src/App.elm",
+        "src/AppTwoElements.elm",
+        "src/Custom.elm",
+        "src/DocTwoElements.elm",
+        "src/Main.elm"
+      ],
       "output": "build/main.js"
     }
   },

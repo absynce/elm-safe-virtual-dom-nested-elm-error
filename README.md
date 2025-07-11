@@ -9,12 +9,10 @@ npm start
 
 Go to any of the following. Some require the debugger to be opened for an error to show up.
 
-- ❌ `doc.html` - error on load, stops execution
-- ❌ `doc-no-space-body.html` - error when debugger is opened
-- ❌ `doc-defer-head-scripts.html` - error when debugger is opened
-- ❌ `app.html` - error on load, stops execution
-- ❌ `app-no-space-body-error.html` - error when debugger is opened
-- ❌ `app-defer-head-scripts-error-debugger.html` - error when debugger is opened
+- ✅ `doc.html` - works with only one (1) Elm custom element
+- ❌ `doc-two-elements.html` - error on load, stops execution when 2+ Elm custom elements
+- ✅ `app.html` - works with only one (1) Elm custom element
+- ❌ `app-two-elements.html` - error on load, stops execution when 2+ Elm custom elements
 
 
 ## Stack trace
